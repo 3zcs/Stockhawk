@@ -13,7 +13,7 @@ import net.simonvt.schematic.annotation.TableEndpoint;
 public class QuoteProvider {
   public static final String AUTHORITY = "com.sam_chordas.android.stockhawk.data.QuoteProvider";
 
-  static final Uri BASE_CONTENT_URI = Uri.parse("content://" + AUTHORITY);
+  public static final Uri BASE_CONTENT_URI = Uri.parse("content://" + AUTHORITY);
 
   interface Path{
     String QUOTES = "quotes";
@@ -33,8 +33,8 @@ public class QuoteProvider {
         path = Path.QUOTES,
         type = "vnd.android.cursor.dir/quote"
     )
-    public static final Uri CONTENT_URI = buildUri(Path.QUOTES);
 
+    public static final Uri CONTENT_URI = buildUri(Path.QUOTES);
     @InexactContentUri(
         name = "QUOTE_ID",
         path = Path.QUOTES + "/*",
@@ -45,5 +45,6 @@ public class QuoteProvider {
     public static Uri withSymbol(String symbol){
       return buildUri(Path.QUOTES, symbol);
     }
+
   }
 }

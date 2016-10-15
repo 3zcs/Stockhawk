@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+        <string name="app_name">Stock Hawk</string>
+
+        <string name="action_example">Example action</string>
+        <string name="action_settings">الأعدادات</string>
+        <string name="action_change_units">تغيير الوحدات</string>
+        <string name="symbol_search" translatable="false">البحث عن رمز</string>
+        <string name="content_test" translatable="false">البحث عن رمز المتجر</string>
+        <string name="input_hint" translatable="false">FB</string>
+        <string name="input_prefill"></string>
+        <string name="network_toast">عفوا ! التطبيق يتطلب اتصال بالشبكة</string>
+        <string name="add_new_stock">أضافة متجر جديد</string>
+        <string name="stock_intent_service" translatable="false">Stock Intent Service</string>
+        <string name="saved">هذا المتجر محفوظ مسبقاً !</string>
+        <string name="provide_data" >عليك تزويد هذا التمثيل البياني بالبيانات</string>
+
+</resources>
